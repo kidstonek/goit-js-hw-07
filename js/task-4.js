@@ -7,8 +7,8 @@ myForm.addEventListener('submit', (e) => {
         return;
     }
     const answer = {
-        email: myForm.elements.email.value,
-        password: myForm.elements.password.value,
+        email: myForm.elements.email.value.trim(),
+        password: myForm.elements.password.value.trim(),
     };
     myForm.reset();
     console.log(answer)
