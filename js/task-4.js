@@ -2,7 +2,7 @@ const myForm = document.querySelector('.login-form');
 
 myForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    if ((myForm.elements.email.value === '') || (myForm.elements.password.value === '')) {
+    if ((myForm.elements.email.value.trim() === '') || (myForm.elements.password.value.trim() === '')) {
         alert("All form fields must be filled in");
         return;
     }
